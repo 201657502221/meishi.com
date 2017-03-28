@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://static.meishichina.com/v6/css/lib/all.css?a=7">
+    <link rel="stylesheet" type="text/css"
+          href="http://static.meishichina.com/v6/css/app/newrecipe/recipe2.css?a=2016-11-08">
+    <link rel="stylesheet" type="text/css" href="http://static.meishichina.com/v6/css/lib/comment.css?a=2015-07-16">
+    <script type="text/javascript" src="http://static.meishichina.com/v6/js/lib/dfp-content-7.js"></script>
+
+</head>
+<body>
+<div class="top">
+    <div class="top_content">
+        <ul>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#" onclick="AddFavorite(window.location,document,title)"> 加入收藏</a></li>
+            <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+        </ul>
+    </div>
+</div> <!--top结束-->
+
+<div class="wrap">
+    <div class="logo">
+        <div class="logo_left">
+            <a href="index.html"><img src="img/logo.jpg" alt="慕课网"/></a>
+        </div>
+        <div class="logo_right">
+            <img src="img/tel.jpg" alt="客服"/>联系客服QQ：<span class="tel">123-456-789</span>
+        </div>
+    </div><!--logo结束-->
+
+
+    <div class="nav">
+        <div class="nav_left"></div>
+        <div class="nav_mid">
+            <div class="nav_mid_left">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">菜谱</a></li>
+                    <li><a href="list.html">食材</a></li>
+                    <li><a href="list.html">健康</a></li>
+                    <li><a href="list.html">专题</a></li>
+                    <li><a href="list.html">社区</a></li>
+                </ul>
+            </div>
+            <div class="nav_mid_right">
+                <form action="" method="post">
+                    <input type="text" class="search_text"/>
+                </form>
+            </div>
+        </div><!--nav mid结束-->
+        <div class="nav_right"></div>
+    </div> <!--nav结束-->
+    <div class="ad" id="picBox" style="height: 243px" ;>
+        <img src="img/ad.jpg"/>
+    </div><!--ad结束 -->
+
+    <div class="list_main">
+        <div class="news_type">
+            <h2>菜谱大全</h2>
+            <div class="news_type_content">
+                <ul>
+                    <li><a href="list.html">最受欢迎的家常菜</a></li>
+                    <li><a href="list.html">地方特色小吃</a></li>
+                    <li><a href="list.html">豆制品控的最爱</a></li>
+                    <li><a href="list.html">烘焙小课堂</a></li>
+                    <li><a href="list.html">滋补汤水</a></li>
+                    <li><a href="list.html">无限可能的早餐</a></li>
+                    <li><a href="list.html">爱上素食--更健康的生活方式</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="list_box">
+            <h2>菜谱大全</h2>
+            <h1>萌萌哒小熊面包</h1>
+            <p class="list_box_newsInfo">发布人：爱蓝胖子 发布时间：2017.03.13</p>
+            <div class="list_box_newsContent">
+                <div id="block_txt1"><span class="txt_tart">“</span>最近爱上做各种各样的超级可爱的面包，准备将它们组成一个萌宠系列。这次做的是萌翻天的小熊面包，用的是学厨的12连杯马芬模具。用蛋糕模做面包，造型更加独特。面包很松软，放了3天还是软软的。淡淡的面包香味，纯粹的味道。<span
+                        class="txt_end">” </span>
+                </div>
+                </blockquote>
+                <div class="mo mt20">
+                    <h3>食材明细</h3>
+                </div>
+                <div class="recipeCategory_sub_R clear">
+                    <ul>
+                        <li><span class="category_s1"><b>牛奶（可可面团）</b></span>
+                            <span class="category_s2">65g</span>
+                        </li>
+                        <li><span class="category_s1"><b>鸡蛋液（可可面团）</b></span>
+                            <span class="category_s2">30g</span>
+                        </li>
+                        <li><span class="category_s1"><b>高筋面粉（可可面团）</b></span>
+                            <span class="category_s2">130g</span>
+                        </li>
+                        <li><span class="category_s1"><b>低筋面粉（可可面团）</b></span>
+                            <span class="category_s2">15g</span>
+                        </li>
+                        <li><span class="category_s1"><b>可可粉（可可面团）</b></span>
+                            <span class="category_s2">5g</span>
+                        </li>
+                        <li><span class="category_s1"><b>糖（可可面团）</b></span>
+                            <span class="category_s2">20g</span>
+                        </li>
+                        <li><span class="category_s1"><b>盐（可可面团）</b></span>
+                            <span class="category_s2">1g</span>
+                        </li>
+                        <li><span class="category_s1"><b>酵母（可可面团）</b></span>
+                            <span class="category_s2">2g</span>
+                        </li>
+                        <li><span class="category_s1"><b>黄油（可可面团）</b></span>
+                            <span class="category_s2">18g</span>
+                        </li>
+                        <li><span class="category_s1"><b>牛奶（原味面团）</b></span>
+                            <span class="category_s2">45g</span>
+                        </li>
+                        <li><span class="category_s1"><b>鸡蛋液（原味面团）</b></span>
+                            <span class="category_s2">20g</span>
+                        </li>
+                        <li><span class="category_s1"><b>高筋面粉（原味面团）</b></span>
+                            <span class="category_s2">90g</span>
+                        </li>
+                        <li><span class="category_s1"><b>低筋面粉（原味面团）</b></span>
+                            <span class="category_s2">15g</span>
+                        </li>
+                        <li><span class="category_s1"><b>糖（原味面团）</b></span>
+                            <span class="category_s2">15g</span>
+                        </li>
+                        <li><span class="category_s1"><b>盐（原味面团）</b></span>
+                            <span class="category_s2">1g</span>
+                        </li>
+                        <li><span class="category_s1"><b>酵母（原味面团）</b></span>
+                            <span class="category_s2">2g</span>
+                        </li>
+                        <li><span class="category_s1"><b>黄油（原味面团）</b></span>
+                            <span class="category_s2">12g</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recipeCategory_sub_R mt30 clear">
+                    <ul>
+                        <li><span class="category_s1"><a title="甜味" href="#" target="_blank">甜味</a></span>
+                            <span class="category_s2">口味</span>
+                        </li>
+                        <li><span class="category_s1"><a title="烤" href="#" target="_blank">烤</a></span>
+                            <span class="category_s2">工艺</span>
+                        </li>
+                        <li><span class="category_s1"><a title="数小时" href="#" target="_blank">数小时</a></span>
+                            <span class="category_s2">耗时</span>
+                        </li>
+                        <li><span class="category_s1"><a title="普通" href="#" target="_blank">普通</a></span>
+                            <span class="category_s2">难度</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mo mt20">
+                    <h3>萌萌哒小熊面包的做法步骤</h3>
+                </div>
+                <div class="recipeStep">
+                    <ul>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/1.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：1">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">1</div>
+                                先做可可面团。除黄油外,把可可面团的其它原材料按照底层液体，中层粉类，上层糖、盐和酵母的顺序放入面包中，启动一个揉面程序。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/2.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：2">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">2</div>
+                                揉至能拉出比较厚的膜后加入软化好的黄油。再次启动和面程序，15分钟。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/3.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：3">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">3</div>
+                                揉至扩展阶段，这时候面团非常光滑。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/4.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：4">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">4</div>
+                                可以撑出较薄的膜，不需要手套膜。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/5.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：5">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">5</div>
+                                按同样的做法做一个原味面团。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/6.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：6">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">6</div>
+                                面团团圆之后放入大碗中，开启烤箱发酵功能,时间为60分钟。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/7.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：7">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">7</div>
+                                发酵到面团膨胀两倍大，手指沾面粉戳一个洞，不回缩不塌陷即表示发酵完成。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/8.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：8">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">8</div>
+                                发酵好的面团用擀面杖排气，可可面团先分出一个35g的面团（小熊的头和手），剩下的均分为7个小面团。原味面团先分出一个25g的面团（小熊的头和手），剩下的均分为5个小面团。将它们都滚圆之后盖上保鲜膜松弛15分钟。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/9.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：9">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">9</div>
+                                松弛好的面团压扁之后再次滚圆，一一摆入模具中，送入烤箱， 36℃发酵，大约需要30分钟，发酵到2倍大。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/10.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：10">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">10</div>
+                                发酵期间我们来处理小熊的耳朵和手。耳朵每个2g、手每个1.5g。可可面团分出14个耳朵和手，原味面团分出10个耳朵和手，将它们滚圆备用。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/11.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：11">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">11</div>
+                                取出发酵好的面团，之后将做耳朵和手的小剂子摆在相应的位置。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/12.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：12">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">12</div>
+                                整形好的面团送入预热好的烤箱，上下火170℃，中层，烤25分钟。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/13.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：13">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">13</div>
+                                出炉后脱模，放在烤网上晾凉，用黑色色素笔画出表情即可。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recipeStep_img">
+                                <img src="img/14.jpg"
+                                     alt="萌萌哒小熊面包的做法步骤：14">
+                            </div>
+                            <div class="recipeStep_word">
+                                <div class="recipeStep_num">14</div>
+                                另一种做法是先揉一个原味面团，再均分两半（做成6只白色小熊，6只可可小熊），一半加入可可粉，之后分开发酵，剩下的步骤一致。面团原料分量：高筋面粉220g、低筋面粉30g、糖35g、牛奶110g、鸡蛋一个、盐2g、酵母3g、黄油30g。加入的可可粉一样是5g。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mo">
+                    <h3>小窍门</h3>
+                </div>
+                <div class="recipeTip">
+                    1.牛奶的量请根据面粉的吸水性进行调节。<br/>
+                    2.烘烤的时间和温度仅供参考，请根据自己烤箱的脾气自我调整。<br/>
+                    3.烘烤的时候剩下10分钟盖上锡纸。<br/>
+                    4.可以用融化的巧克力画表情。<br/>
+                    5.模具学厨大号12连杯不粘马芬模。<br/>
+                    6.烤箱柏翠PE5359。
+                </div>
+                <div class="recipeTip mt16">
+                    使用的厨具：面包机、电烤箱
+                </div>
+
+            </div>
+        </div><!-- list_box结束 -->
+    </div>
+
+</div><!--wrap结束-->
+<div class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li><a href="#">关于</a>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">版权声明</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">课程</a>
+                <ul>
+                    <li><a href="#">PHP开发</a></li>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">Java开发</a></li>
+                    <li><a href="#">Android开发</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">留言</a>
+                <ul>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                    <li><a href="#">企业微信</a></li>
+                    <li><a href="#">QQ空间</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">关注</a>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">问题留言</a></li>
+                    <li><a href="#">媒体联络</a></li>
+                    <li><a href="#">在线客服</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img src="img/weixin.png"/> 微信关注</a>
+                <ul>
+                    <li><img src="img/qrcode.jpg"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
